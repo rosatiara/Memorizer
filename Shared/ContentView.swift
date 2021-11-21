@@ -9,12 +9,12 @@ import SwiftUI
 
 // ContentView is just the name of the structure. It can be whatever name you want.
 struct ContentView: View {
-    var emojis = ["🐴","🐿","🦔","🍪","🦉","🐿","🦔","🍪","🦉"]
+    var emojis = ["🐴","🐿","🦔","🍪","🦉","🐌","🐒","🫔","🥐"]
     var body: some View {
         // Create a row with HStack (horizontal stack)
         
             HStack {
-                ForEach(emojis[0..<6], id: \.self) {
+                ForEach(emojis[0..<9], id: \.self) {
                     emoji in CardView(content: emoji)
                 }
             }
