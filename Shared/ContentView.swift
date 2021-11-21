@@ -9,38 +9,64 @@ import SwiftUI
 
 // ContentView is just the name of the structure. It can be whatever name you want.
 struct ContentView: View {
-    
+    var emojis = ["🐴","🐿","🦔","🍪","🦉","🐿","🦔","🍪","🦉"]
     var body: some View {
         // Create a row with HStack (horizontal stack)
-        HStack {
-            CardView()
-            CardView()
-            CardView()
-            CardView()
-        }
+        
+            HStack {
+                ForEach(emojis[0..<6], id: \.self) {
+                    emoji in CardView(content: emoji)
+                }
+            }
         .padding(15)
-        .foregroundColor(.red)
+        .foregroundColor(.brown)
     }
     
 }
 
 // ZStack is just stacking one element and another. The first element will be the lowest level of stack.
 struct CardView: View {
-    var body: some View {
+   @State var isFaceUp: Bool = false
+     var body: some View {
+        // local variable for rectangle
+        let card = RoundedRectangle(cornerRadius: 10)
+
         ZStack {
-            RoundedRectangle(cornerRadius: 20)
-                .foregroundColor(.white)
-//                .background(.yellow) // debug
-            RoundedRectangle(cornerRadius: 20)
-                .stroke(lineWidth: 3.5)
-//                .background(.blue) // debug
-            Text("🙉")
-                .font(.largeTitle)
+            if isFaceUp {
+                card.foregroundColor(.white)
+                card.stroke(lineWidth: 3.5)
+                Text("🙉")
+                    .font(.largeTitle)
+            }
+            else {
+                card.foregroundColor(.brown)
+            }
         }
+        .onTapGesture {
+            isFaceUp = !isFaceUp
+        }
+        
+            
     }
 }
  
-// Preview
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// automatic preview
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
