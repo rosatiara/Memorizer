@@ -16,8 +16,6 @@ struct ContentView: View {
             CardView()
             CardView()
         }
-        foregroundColor(.red)
-        
     }
     
 }
@@ -34,6 +32,7 @@ struct CardView: View {
             RoundedRectangle(cornerRadius: 20)
                 .stroke(lineWidth: 2)
                 .padding(10)
+                .foregroundColor(.red)
             Text("Hello there!")
             
         }
