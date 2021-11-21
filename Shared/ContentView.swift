@@ -7,11 +7,19 @@
 
 import SwiftUI
 
+// ContentView is just the name of the structure. It can be whatever name you want.
 struct ContentView: View {
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        // Create a row with HStack (horizontal stack)
+        HStack {
+            CardView()
+            CardView()
+        }
+        foregroundColor(.red)
+        
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
@@ -19,3 +27,16 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+struct CardView: View {
+    var body: some View {
+        ZStack {
+            RoundedRectangle(cornerRadius: 20)
+                .stroke(lineWidth: 2)
+                .padding(10)
+            Text("Hello there!")
+            
+        }
+    }
+}
+ 
