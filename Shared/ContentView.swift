@@ -24,7 +24,7 @@ struct ContentView: View {
     
 }
 
-// ZStack is like placing stacking one element and another. The first element will be the lowest level of stack.
+// ZStack is just stacking one element and another. The first element will be the lowest level of stack.
 struct CardView: View {
     var body: some View {
         ZStack {
