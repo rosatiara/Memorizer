@@ -26,6 +26,7 @@ struct ContentView: View {
 
 // ZStack is just stacking one element and another. The first element will be the lowest level of stack.
 struct CardView: View {
+    var content: String
    @State var isFaceUp: Bool = false
      var body: some View {
         // local variable for rectangle
@@ -35,7 +36,7 @@ struct CardView: View {
             if isFaceUp {
                 card.foregroundColor(.white)
                 card.stroke(lineWidth: 3.5)
-                Text("🙉")
+                Text(content)
                     .font(.largeTitle)
             }
             else {
