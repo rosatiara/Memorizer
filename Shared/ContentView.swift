@@ -20,11 +20,6 @@ struct ContentView: View {
     
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
 
 struct CardView: View {
     var body: some View {
@@ -33,9 +28,20 @@ struct CardView: View {
                 .stroke(lineWidth: 2)
                 .padding(10)
                 .foregroundColor(.red)
-            Text("Hello there!")
-            
+            Text("🙉")
+                .font(.largeTitle)
         }
     }
 }
  
+// Preview
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        Group {
+            ContentView()
+                .preferredColorScheme(.dark)
+            ContentView()
+                .preferredColorScheme(.light)
+        }
+    }
+}
