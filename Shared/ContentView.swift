@@ -20,7 +20,7 @@ struct ContentView: View {
                 }
             }
             
-            HStack {
+            HStack(spacing:30){
                 Button(action: {
                     cardCount += 1
                 }, label: {
@@ -30,7 +30,7 @@ struct ContentView: View {
                     }
                 })
                 Button(action: {
-                    cardCount += 1
+                    cardCount -= 1
                 }, label: {
                     VStack {
                         Text("Remove")
