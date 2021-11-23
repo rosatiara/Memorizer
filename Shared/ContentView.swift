@@ -13,12 +13,15 @@ struct ContentView: View {
     var cardCount = 6
     var body: some View {
         // Create a row with HStack (horizontal stack)
-        
+        VStack {
             HStack {
                 ForEach(emojis[0..<cardCount], id: \.self) {
                     emoji in CardView(content: emoji)
                 }
             }
+            Button(action: {}, label: {Text("Shuffle")})
+            
+        }
         .padding(15)
         .foregroundColor(.brown)
     }
