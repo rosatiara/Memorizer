@@ -19,18 +19,23 @@ struct ContentView: View {
                     emoji in CardView(content: emoji)
                 }
             }
-            
-            HStack(spacing:30){
+            Spacer(minLength: 10.0)
+            HStack {
                 Button(action: {
-                    cardCount += 1
+                    if cardCount < emojis.count {
+                        cardCount += 1
+                    }
                 }, label: {
                     VStack {
                         Text("Add")
                         Text("Card")
                     }
                 })
+                Spacer()
                 Button(action: {
-                    cardCount -= 1
+                    if cardCount > 1 {
+                        cardCount -= 1
+                    }
                 }, label: {
                     VStack {
                         Text("Remove")
@@ -42,6 +47,10 @@ struct ContentView: View {
         }
         .padding(15)
         .foregroundColor(.brown)
+        if cardCount == 0 {
+            
+        }
+        
     }
     
 }
