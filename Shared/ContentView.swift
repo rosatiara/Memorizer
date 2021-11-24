@@ -21,29 +21,10 @@ struct ContentView: View {
             }
             Spacer(minLength: 10.0)
             HStack {
-                Button(action: {
-                    if cardCount < emojis.count {
-                        cardCount += 1
-                    }
-                }, label: {
-                    VStack {
-                        Text("Add")
-                        Text("Card")
-                    }
-                })
+                add
                 Spacer()
-                Button(action: {
-                    if cardCount > 1 {
-                        cardCount -= 1
-                    }
-                }, label: {
-                    VStack {
-                        Text("Remove")
-                        Text("Card")
-                    }
-                })
+                remove
             }
-            
         }
         .padding(15)
         .foregroundColor(.brown)
@@ -51,6 +32,32 @@ struct ContentView: View {
             
         }
         
+    }
+    
+    var remove: some View {
+        Button(action: {
+            if cardCount > 1 {
+                cardCount -= 1
+            }
+        }, label: {
+            VStack {
+                Text("Remove")
+                Text("Card")
+            }
+        })
+    }
+    
+    var add: some View {
+        Button(action: {
+            if cardCount < emojis.count {
+                cardCount += 1
+            }
+        }, label: {
+            VStack {
+                Text("Add")
+                Text("Card")
+            }
+        })
     }
     
 }
