@@ -14,16 +14,16 @@ struct ContentView: View {
     var body: some View {
         // Create a row with HStack (horizontal stack)
         VStack {
-            HStack {
+            LazyVGrid(columns: [GridItem(), GridItem(), GridItem()]) {
                 ForEach(emojis[0..<cardCount], id: \.self) {
                     emoji in CardView(content: emoji)
                 }
             }
             Spacer(minLength: 10.0)
             HStack {
-                add
-                Spacer()
                 remove
+                Spacer()
+                add
             }
         }
         .padding(15)
@@ -31,7 +31,6 @@ struct ContentView: View {
         if cardCount == 0 {
             
         }
-        
     }
     
     var remove: some View {
@@ -65,15 +64,15 @@ struct ContentView: View {
 // ZStack is just stacking one element and another. The first element will be the lowest level of stack.
 struct CardView: View {
     var content: String
-   @State var isFaceUp: Bool = false
+   @State var isFaceUp: Bool = true
      var body: some View {
         // local variable for rectangle
-        let card = RoundedRectangle(cornerRadius: 10)
+        let card = RoundedRectangle(cornerRadius: 8)
 
         ZStack {
             if isFaceUp {
                 card.foregroundColor(.white)
-                card.stroke(lineWidth: 3.5)
+                card.stroke(lineWidth: 3)
                 Text(content)
                     .font(.largeTitle)
             }
@@ -84,8 +83,6 @@ struct CardView: View {
         .onTapGesture {
             isFaceUp = !isFaceUp
         }
-        
-            
     }
 }
 
