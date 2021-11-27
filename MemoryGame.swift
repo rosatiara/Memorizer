@@ -8,5 +8,5 @@
 import Foundation
 
 struct MemoryGame {
-    
+    var cards: Array<Card>
 }
