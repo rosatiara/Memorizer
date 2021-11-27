@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		130A3236275270BE0077814C /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130A3235275270BE0077814C /* MemoryGame.swift */; };
 		134FEC0C2747E512009F68B9 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134FEC0B2747E512009F68B9 /* Tests_iOS.swift */; };
 		134FEC0E2747E512009F68B9 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134FEC0D2747E512009F68B9 /* Tests_iOSLaunchTests.swift */; };
 		134FEC182747E512009F68B9 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134FEC172747E512009F68B9 /* Tests_macOS.swift */; };
@@ -17,8 +18,6 @@
 		134FEC1E2747E512009F68B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134FEBF42747E511009F68B9 /* ContentView.swift */; };
 		134FEC1F2747E512009F68B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 134FEBF52747E512009F68B9 /* Assets.xcassets */; };
 		134FEC202747E512009F68B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 134FEBF52747E512009F68B9 /* Assets.xcassets */; };
-		13F9BDE427526E6D007629B7 /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F9BDE327526E6D007629B7 /* MemoryGame.swift */; };
-		13F9BDE527526E6D007629B7 /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F9BDE327526E6D007629B7 /* MemoryGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		130A3235275270BE0077814C /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = SOURCE_ROOT; };
 		134FEBF32747E511009F68B9 /* learn1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = learn1App.swift; sourceTree = "<group>"; };
 		134FEBF42747E511009F68B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		134FEBF52747E512009F68B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,7 +51,6 @@
 		134FEC132747E512009F68B9 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		134FEC172747E512009F68B9 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		134FEC192747E512009F68B9 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
-		13F9BDE327526E6D007629B7 /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +99,9 @@
 		134FEBF22747E511009F68B9 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				130A3235275270BE0077814C /* MemoryGame.swift */,
 				134FEBF32747E511009F68B9 /* learn1App.swift */,
 				134FEBF42747E511009F68B9 /* ContentView.swift */,
-				13F9BDE327526E6D007629B7 /* MemoryGame.swift */,
 				134FEBF52747E512009F68B9 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -303,7 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13F9BDE427526E6D007629B7 /* MemoryGame.swift in Sources */,
+				130A3236275270BE0077814C /* MemoryGame.swift in Sources */,
 				134FEC1D2747E512009F68B9 /* ContentView.swift in Sources */,
 				134FEC1B2747E512009F68B9 /* learn1App.swift in Sources */,
 			);
@@ -313,7 +312,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13F9BDE527526E6D007629B7 /* MemoryGame.swift in Sources */,
 				134FEC1E2747E512009F68B9 /* ContentView.swift in Sources */,
 				134FEC1C2747E512009F68B9 /* learn1App.swift in Sources */,
 			);
