@@ -12,14 +12,24 @@ struct MemoryGame<CardContent> {
     func choose(_ card: Card) {
         
     }
-    init(numberOfPairsofCards: Int) {
+    init(numberOfPairsOfCards: Int, createCardContent: (Int) -> CardContent) {
         cards = Array<Card>()
+        // add numberOfPairsOfCards * 2 cards to cards array
+        for pairIndex in 0..<numberOfPairsOfCards {
+            // create a function called createCardContent so cardContent can be used (bcs it's generics)
+            // let content: CardContent = createCardContent(pairIndex)
+            // the line above can be written as
+            let content = createCardContent(pairIndex)
+            cards.append(Card(content: content))
+            cards.append(Card(content: content))
+
+        }
     }
     
 //   MemoryGame.Card
     struct Card {
-        var isFaceUp: Bool
-        var isMatched: Bool
+        var isFaceUp: Bool = false
+        var isMatched: Bool = false
         var content: CardContent // this is a dontcare or generics
     }
 }
