@@ -34,28 +34,28 @@ struct ContentView: View {
        
     }
     
-//    var remove: some View {
-//        Button(action: {
-//            if cardCount > 1 {
-//                cardCount -= 1
-//            }
-//        }, label: {
-//            Text("-")
-//                .font(.system(size: 40))
-//        }).padding()
-//    }
-//
-//    var add: some View {
-//        Button(action: {
-//            if cardCount < emojis.count {
-//                cardCount += 1
-//            }
-//        }, label: {
-//            Text("+")
-//                .font(.system(size: 40))
-//        }).padding()
-//    }
-    
+    var remove: some View {
+        Button(action: {
+            if cardCount > 1 {
+                cardCount -= 1
+            }
+        }, label: {
+            Text("-")
+                .font(.system(size: 40))
+        }).padding()
+    }
+
+    var add: some View {
+        Button(action: {
+            if cardCount < emojis.count {
+                cardCount += 1
+            }
+        }, label: {
+            Text("+")
+                .font(.system(size: 40))
+        }).padding()
+    }
+      
 }
 
 // ZStack is just stacking one element and another. The first element will be the lowest level of stack.
