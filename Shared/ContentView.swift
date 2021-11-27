@@ -53,7 +53,7 @@ struct ContentView: View {
         }, label: {
             Text("+")
                 .font(.system(size: 40))
-        }).padding()
+        }).padding(30)
     }
       
 }
