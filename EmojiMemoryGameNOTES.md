@@ -1,4 +1,4 @@
-#  EmojiMemoryGame NOTES
+#  EmojiMemoryGame NOTES (viewModel)
 //
 //  EmojiMemoryGame.swift
 //  learn1 (iOS)
