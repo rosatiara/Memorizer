@@ -53,6 +53,7 @@
 		134FEC132747E512009F68B9 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		134FEC172747E512009F68B9 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		134FEC192747E512009F68B9 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		13EC6ABC275795510060A722 /* EmojiMemoryGameNOTES.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = EmojiMemoryGameNOTES.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +91,7 @@
 		134FEBED2747E511009F68B9 = {
 			isa = PBXGroup;
 			children = (
+				13EC6ABC275795510060A722 /* EmojiMemoryGameNOTES.md */,
 				134FEBF22747E511009F68B9 /* Shared */,
 				134FEC012747E512009F68B9 /* macOS */,
 				134FEC0A2747E512009F68B9 /* Tests iOS */,
