@@ -12,6 +12,10 @@ An iOS game based on Stanford’s Spring 2021 CS193p course (Developing Applicat
 - Struct & Class
 - Protocols
 - Don't care (generics)
-- Enum
 - Functions
+### Lecture 4 - Memorize Game Logic
+- Completing MVVM architecture
+- Using Model to build the View
+- Enumeration syntax (Optional included)
+
 
