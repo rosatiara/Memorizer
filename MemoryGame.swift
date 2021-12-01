@@ -24,6 +24,7 @@ struct MemoryGame<CardContent> {
             cards.append(Card(content: content))
 
         }
+        print("hello")
     }
     
 //   MemoryGame.Card
