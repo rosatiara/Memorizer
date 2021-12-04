@@ -10,6 +10,7 @@ struct MemoryGame<CardContent> {
     private(set) var cards: Array<Card>
     
     func choose(_ card: Card) {
+        
     }
     
     init(numberOfPairsOfCards: Int, createCardContent: (Int) -> CardContent) {
