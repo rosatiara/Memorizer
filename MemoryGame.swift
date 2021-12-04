@@ -10,7 +10,7 @@ struct MemoryGame<CardContent> {
     private(set) var cards: Array<Card>
     
     func choose(_ card: Card) {
-        print("hi gg ...  sdgfdd")
+        print("hello")
     }
     
     init(numberOfPairsOfCards: Int, createCardContent: (Int) -> CardContent) {
